@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "dbup": "npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all"
+    "dbup": "npx sequelize db:create && npx sequelize db:migrate && npx sequelize db:seed:all",
+    "drop": "npx sequelize db:drop"
   },
   "author": "",
   "license": "ISC",
