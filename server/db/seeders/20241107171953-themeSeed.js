@@ -5,13 +5,13 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Themes', [
       {
-        theme: 'Кошки'
+        theme: 'Wellcum to Frontend'
       },
       {
-        theme: 'Собачки'
+        theme: 'Перед выходными'
       },
       {
-        theme: 'Хорьки'
+        theme: 'Глупые и смешные'
       }
     ], {});
   },
