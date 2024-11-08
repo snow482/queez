@@ -1,11 +1,13 @@
 const router = require('express').Router()
-const { QuestionAnswers } = require('../db/models')
+const { QuestionsAnswers } = require('../db/models')
 
 router.route('/:id')
   .get(async (req, res) => {
     try {
       const { id } = req.params
-      const data = QuestionAnswers.findOne({where: {id}})
+      console.log(req.params);
+      
+      const data = await QuestionsAnswers.findByPk(Number(id))
       res.status(200).json(data)
 
     } catch(error) {
