@@ -9,15 +9,15 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      this.hasMany(models.Questionsanswer, {
-        foreignKey: "theme_id"
+    static associate(models) { 
+      this.hasMany(models.QuestionsAnswers, {
+        foreignKey: "theme_id",
       })
     }
   }
   Theme.init({
     theme: DataTypes.TEXT
-  }, {
+  }, { 
     sequelize,
     modelName: 'Theme',
   });
