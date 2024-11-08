@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Theme.init({
     theme: DataTypes.TEXT
-  }, {
+  }, { 
     sequelize,
     modelName: 'Theme',
   });
