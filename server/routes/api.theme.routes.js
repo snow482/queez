@@ -15,7 +15,7 @@ router.route('/')
     .get( async (req, res) => {
       try {
         const { theme_id } = req.params
-        console.log(req.params);
+        //console.log(req.params);
         
         const questions = await QuestionsAnswers.findAll({where: {theme_id:Number(theme_id)}})
         res.status(200).json(questions)
