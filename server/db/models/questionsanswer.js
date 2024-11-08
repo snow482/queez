@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   QuestionsAnswers.init({
     theme_id: DataTypes.INTEGER,
-    questions: DataTypes.TEXT,
+    question: DataTypes.TEXT,
     answer: DataTypes.TEXT
   }, {
     sequelize,
